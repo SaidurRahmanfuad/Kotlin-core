@@ -1,0 +1,38 @@
+fun main(args: Array<String>) {
+
+//Normal for loop
+for(i in 1..4)
+    println("lol")
+
+//Nested Loop
+   for(i in 1..5)
+    {
+        for (j in 1..5)
+        {
+             for(k in 1..5)
+              {
+                println("$i,$j,$k")
+                
+              }
+            
+        }
+       
+    }
+
+//nested for loop/labeled using break 
+  mainLoop@ for(i in 1..5)
+    {
+        for (j in 1..5)
+        {        
+             for(k in 1..5)
+              {
+                println("$i,$j,$k")
+                  if(i==5 && j==3 && k==3)
+                  break@mainLoop
+              }
+            
+        }
+       
+    }
+   
+}
