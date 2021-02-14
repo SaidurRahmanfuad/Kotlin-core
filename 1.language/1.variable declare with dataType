@@ -1,0 +1,52 @@
+   
+Syntext-->Style1. var variableName =value   ||or||Style2. var variableName:DataType   ||or|| Style3. var variableName:DataType=value
+DataType-->String,Int,Float,Double,Byte,Char
+DataType exaple with value--> String="Saidur" | Int=10 | Float=20.7f or F | Double = 10.3 | Char='S'
+
+Var vs Val-->var is stand for mutable/variable(Can be changed) or val is stand for immutable/variable value(cannot changed) ;val is also known static or constant
+
+Variable decleration with style1. "var variableName =value"  
+[No need ; and kotlin auto understand datatype]
+var name="Saidur"          String
+var age=100                      Int
+var height=5.10                 Double
+var weight=74.346f           Float
+var firstletter='S'              Char
+
+Variable decleration with Style2. "var variableName:DataType"
+var name:String
+   name=="Saidur"          
+var age:Int 
+  age==100          
+var height:Double
+   height=5.10                    
+var weight:Float
+   weight=74.346f           
+var firstletter:Char
+  firstletter='S'              
+ 
+Variable decleration with Style3. "var variableName:DataType=value"
+var name:String="Saidur"          
+var age:Int=100           
+var height:Double=5.10                 
+var weight:Float=74.346f           
+var firstletter:Char='S'   
+
+//You can not change the value if you use val instead of var
+[val name:String="Saidur"          
+val age:Int=100           
+val height:Double=5.10                 
+val weight:Float=74.346f           
+val firstletter:Char='S'  ] 
+
+//keyword -->rangeTo [Forword] ,downTo[backword],in[within range]
+//Range
+   val x=1 .. 4                  that means [1,2,3,4] style1
+   var a=1.rangeTo(4)     that means [1,2,3]    style2
+    
+    val y=5 downTo 1         that means [5,4,3,2,1] style1
+    var b=9.downTo(6)       that means [9,8,7,6]    style2
+    
+    val z=10 downTo 1 step 3  that means [10,7,5,3,1]
+    var x="a".."z"     that means[a to z are present]
+   
