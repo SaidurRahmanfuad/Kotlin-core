@@ -1,0 +1,49 @@
+//Functin keyword is fun
+//Main Function-->  fun main(args: Array<String>) {}
+//Create class--> class classname(){}
+//Create function--> fun functionName(){} or with data--> fun functionName(variableName:dataType){}
+
+//String interpolation use "$stringName" with in "" and like this "${obj.stringName}"
+//Create object use--> var objName=ClassName()
+//call obj function-->    objName.funName()
+
+fun main(args: Array<String>) {
+//class call with object [Remember in kotlin each variable of class is an object]
+     var persondata=Person()  //obj Create
+     persondata.name="Meme"   //call with string value
+
+//class call with constractor,multiple function,parameter
+    var upadhi="Bolod"  //initialize value
+    var educationalStatus=Education(roll,"A",33.56) //create obj and assign value for constractor
+    educationalStatus.marksAndroll()    //call method with 2value
+    educationalStatus.alldata()         //call method with all value
+    educationalStatus.sav(upadhi)       //call method with parameterized and assign value
+
+}
+class Person(){
+    var name:String=""
+    
+    fun showData()
+    {
+         println("Her name is $name")
+    }
+}
+
+//Create constructor-->class x(var variableName:Datatype)
+class Education(var roll:Int,var section :String,var avgMarks:Double)
+{
+     //No need to tell just print 2 value 
+    fun marksAndroll()
+    {
+        print("Roll is $roll,Marks is $avgMarks")  //print 2value from constractor and interpolate string
+    }
+    fun alldata()
+    {
+          println("Roll is $roll,and his section $section ,Marks is $avgMarks") //print all value from constractor and interpolate string
+    }
+      //fun with parameter value
+     fun sav(savage:String)
+    {
+        println("He is a $savage") //print parameterized value and interpolate string
+    }
+}
