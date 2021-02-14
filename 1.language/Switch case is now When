@@ -1,0 +1,26 @@
+fun main(args: Array<String>) {
+
+//when instead of switch case
+   var w:Int=3
+    when(w)
+    {
+        1->println("w value is 1")
+        2,3,4->println("Go to home")
+        //using range in when else
+        in 6..20->println("value is 6 to 20")
+        else-> println("Go to login")
+    }
+
+//when as an expression
+    var ex:Int=19
+   var value:String= when(ex)
+    {
+        1->"w value is 1"
+        2,3,4->"Go to home"
+        //using range in when else
+        in 6..20->"value is 6 to 20"
+        else->"Go to login"
+    }
+    println("$value")
+    
+    }
