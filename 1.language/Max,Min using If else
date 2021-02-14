@@ -1,0 +1,23 @@
+   
+fun main(args: Array<String>) {
+   //Max value
+   var x=10
+    var y=33
+   var maxval:Int =if(x>y)
+                      x
+    else
+    y
+    println("$maxval")
+    
+    //Min value
+    var x=10
+    var y=33
+   var minval:Int =if(x>y)
+    y
+    else
+    x
+    println("$minval")
+    
+    }
+    
+    
